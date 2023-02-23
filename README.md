@@ -1,8 +1,128 @@
-# Python_project_1
- In this , we build a Python Project to Scrape YouTube data using YouTube Data API. Using YouTube API, we extract the data and then load this data into a Python Pandas DataFrame and then analyze this data. Finally, we build simple visualization from this data using the Python Seaborn library.
-We start this project by first creating an YouTube API Key which will be our credential to access youtube data. I  created an API Key. 
-Once the API Key is generated, we will then learn how to use this API key to access different youtube data. I.e. we will walk through the documentation given by google to use youtube API. We will look at the different sections in the documentation to access different data we need to build this project. We will also look at the sample python code given by google to call different resources and methods to fetch youtube data.
+
+# Project Title
+
+Web Scraping Data From YouTube
+
+Problem Statement : To extract  information from car enthusiast youtube channels and make an analysis report of their engagement
 
 
 
-Then,  build a logic to extract video details from a particular channel. We shall extract details such as video title, total views each video has got, total number of likes, dislikes and comments each video has got. We shall extract these details for all of the videos posted by a particular channel. We will then analyze this data by loading it into a pandas dataframe. At the end we will create some simple visualization using Seaborn python library.
+
+
+
+## Authors
+
+- [@drigger091](https://www.github.com/drigger091)
+
+
+## API Reference
+
+#### Get all items
+
+link to access API call methods from google
+
+https://developers.google.com/youtube/v3/docs/channels/list?apix=true
+
+
+## Data extracted
+ 
+`Channel_name`
+
+`Subscribers`
+
+`Views`
+
+`Total Videos`
+
+`Playlist_id`
+
+## Install
+
+This project requires Python and the following Python libraries installed
+
+`Pandas`
+
+`Numpy`
+
+`Matplotlib`
+
+`Seaborn`
+
+`googleleapclient.discovery`
+
+
+
+
+
+
+Code
+
+Exploratory Data analysis code is provided in  YT_analytics_prototype.ipynb. 
+Carwow Video Details.csv is extracted at the end , like wise all individual channels can have their data extracted to a separate CSV files for separate analysis. 
+
+Carwow Video details.csv contents:
+
+`Title`
+
+`Published_date`
+
+`Views`
+
+`Likes`
+
+`Comments`
+
+
+
+
+
+While some code has already been implemented to get you started, you will need to implement additional functionality when requested to make project better.
+## Project Roadmap
+
+
+`Here a custom API key is created with  build from googleleapclient.discovery`
+`Channel_ids of respective channels carwow,dougmunro,motortrend,autocar india,faisal khan`
+
+`The output is generated is jSON format , which is then converted into a dataframe`
+`Exploratory Data analysis is done on the data and presented` 
+
+ 
+`In the YT_analytics_prototype.ipynb we have done the complete analysis`
+
+
+`We derived which feature has the highest dependency on channel views , and which one is lowest`
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+
+## Tech Stack
+
+**Client:** Python, Jupyter Notebook
+
+
+
+
+## Acknowledgements
+
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Google Documentation](https://developers.google.com/youtube/v3/docs/channels/list?apix=true)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+
+
+## Badges
+
+Add badges from somewhere like
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
